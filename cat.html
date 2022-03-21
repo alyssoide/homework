@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://cdn3.iconfinder.com/data/icons/cat-force/256/cat_acrobat.png">
+    <title>Cat</title>
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    .container {
+        height: 100vh;
+        background-image: url(https://wallpaperaccess.com/full/632832.png);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .hero-text {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .container2 {
+        height: 120vh;
+        background-image: url(https://ak.picdn.net/shutterstock/videos/33720751/thumb/1.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .innercontainer {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imgcontainer {
+        margin: 10px;
+    }
+
+    /* Large rounded pink border */
+    hr.new5 {
+        border: 10px solid #ab66ad;
+        border-radius: 0px;
+    }
+
+    /* hyperlink disguised as a button */
+    .button {
+        background: #fff;
+        width: 90px;
+        height: 23px;
+        padding: 6px;
+        border-radius: 7px;
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .button:hover {
+        background: #773e79;
+    }
+
+    /* to get rid of hyperlink underline */
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        background-color: rgb(150, 58, 142);
+        color: white;
+        cursor: pointer;
+        padding: 6px;
+        border-radius: 7px;
+    }
+
+    #myBtn:hover {
+        background-color: #555;
+    }
+</style>
+
+<body>
+    <div class="container" id="top">
+        <img src="file:///Users/nadiajemal/Downloads/dancing%20cat.gif"
+            style="position: absolute; top: 500px; left: 100px;">
+
+        <img src="file:///Users/nadiajemal/Downloads/dancing%20cat.gif"
+            style="position: absolute; top: 500px; left: 200px;">
+
+        <img src="file:///Users/nadiajemal/Downloads/c-removebg-preview.png" height="300"
+            style="position: absolute; top: 430px; left: 1000px;">
+
+        <img src="file:///Users/nadiajemal/Downloads/meow-removebg-preview.png" height="100"
+            style="position: absolute; top: 450px; left: 920px;">
+
+        <div class="hero-text">
+            <h1 style="font-size: 50px">Different Types of Cat Breeds</h1>
+            <h3>There are seventy-one different kinds of cat breeds!</h3>
+            <div class="button"><a href="https://en.wikipedia.org/wiki/List_of_cat_breeds" target="_blank">Click to
+                    see</a></div>
+        </div>
+    </div>
+
+    <hr class="new5">
+
+    <div class="container2">
+        <div class="innercontainer">
+
+            <div class="imgcontainer">
+                <img src="https://i.pinimg.com/originals/52/b8/ee/52b8ee0bc9a4cfa53ef9b382c1e36d50.jpg"
+                    style="border-radius: 20%;" width="400" height="300">
+                <p>Turkish Angora Cat Breed</p>
+            </div>
+
+            <div class="imgcontainer">
+                <img src="https://blog.mystart.com/wp-content/uploads/shutterstock_262571516-e1520615420194.jpg"
+                    style="border-radius: 20%;" width="400" height="300">
+                <p>Siamese Cat Breed</p>
+            </div>
+
+
+            <div class="imgcontainer">
+                <img src="https://www.thegoodypet.com/wp-content/uploads/2021/03/Munchkin-Cat-101-Ultimate-Guide-FAQs-1200x900.jpg"
+                    style="border-radius: 20%;" width="400" height="300">
+                <p>Munchkin Cat Breed</p>
+
+            </div>
+
+            <div class="imgcontainer">
+                <img src="https://kittentoob.com/wp-content/uploads/2014/09/SF1.jpg" style="border-radius: 20%;"
+                    width="400" height="300">
+                <p>Scottish Fold Cat Breed</p>
+            </div>
+        </div>
+    </div>
+
+    <button id="myBtn" title="Go to top"><a href="#top">Back to top</a></button>
+    <script>
+        //Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 30px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.documentElement.scrollTop > 700) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
